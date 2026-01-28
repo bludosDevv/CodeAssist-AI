@@ -4,8 +4,8 @@ plugins {
 }
 
 android {
+    namespace "com.tyron.code.xml-completion"
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdk 26

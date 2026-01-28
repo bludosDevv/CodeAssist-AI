@@ -3,8 +3,8 @@ plugins {
 }
 
 android {
+    namespace "com.tyron.code.appcompat-widgets"
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdk 26

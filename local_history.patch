@@ -59447,6 +59447,7 @@ deleted file mode 100644
 -}
 -
 -android {
+    namespace "com.tyron.code.."
 -    compileSdk 31
 -
 -    defaultConfig {

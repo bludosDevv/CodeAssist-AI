@@ -3,8 +3,8 @@ plugins {
 }
 
 android {
+    namespace "com.tyron.code.constraintlayout"
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdk 21

@@ -4,8 +4,8 @@ plugins {
 apply plugin: 'kotlin-android'
 
 android {
+    namespace "com.tyron.code.viewbinding-inject"
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdk 26

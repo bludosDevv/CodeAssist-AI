@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    namespace "com.tyron.code.terminalview"
     compileSdk 32
 
     defaultConfig {

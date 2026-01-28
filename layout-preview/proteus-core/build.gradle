@@ -3,8 +3,8 @@ plugins {
 }
 
 android {
+    namespace "com.tyron.code.proteus-core"
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdk 26
