@@ -5,7 +5,9 @@ plugins {
 apply plugin: 'kotlin-android'
 
 android {
+    // ✅ FIX 1: Correct namespace (must match imports using R / BuildConfig)
     namespace "com.tyron.completion.java"
+
     compileSdk 31
 
     defaultConfig {
@@ -16,12 +18,18 @@ android {
         consumerProguardFiles "consumer-rules.pro"
     }
 
+    // ✅ FIX 2: Enable BuildConfig generation (AGP 8+ requires this)
+    buildFeatures {
+        buildConfig true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
