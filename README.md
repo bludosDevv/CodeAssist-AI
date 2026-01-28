@@ -3,16 +3,11 @@
 <img width='300px' height='300px' src='https://raw.githubusercontent.com/KrishnaVyshak/CodeAssist/main/logo-light.png#gh-light-mode-only'>
 </p>
 
-<div align='center'>
-  <a href='https://play.google.com/store/apps/details?id=com.tyron.code&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-    <img width='170px%' alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
-  </a>
-</div>
 
 <div align='center'>
   
 [![stability-alpha](https://img.shields.io/badge/stability-alpha-f4d03f.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#alpha)
-[![Chat](https://img.shields.io/badge/chat-on%20discord-7289da)](https://discord.gg/pffnyE6prs)
+[![Chat](https://img.shields.io/badge/chat-on%20discord-7289da)](https://discord.gg/gay)
 
   <h2>A javac APIs-based code editor that supports building Android apps.</h2>
 
