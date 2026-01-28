@@ -197,6 +197,47 @@ public class MainFragment extends Fragment implements ProjectManager.OnProjectOp
             mToolbar.setNavigationIcon(null);
         }
 
+        // Setup AI Assistant FAB
+        com.google.android.material.floatingactionbutton.FloatingActionButton aiFab = 
+                mRoot.findViewById(R.id.fab_ai_assistant);
+        if (aiFab != null && mRoot instanceof DrawerLayout) {
+            DrawerLayout drawerLayout = (DrawerLayout) mRoot;
+            aiFab.setOnClickListener(v -> {
+                if (drawerLayout.isDrawerOpen(GravityCompat.END)) {
+                    drawerLayout.closeDrawer(GravityCompat.END);
+                } else {
+                    // Load AI chat fragment if not already loaded
+                    androidx.fragment.app.Fragment aiFragment = 
+                            getChildFragmentManager().findFragmentById(R.id.ai_chat_container);
+                    if (aiFragment == null) {
+                        com.tyron.code.ai.ui.AiChatFragment chatFragment = 
+                                com.tyron.code.ai.ui.AiChatFragment.newInstance(mProject.getRootFile());
+                        getChildFragmentManager().beginTransaction()
+                                .replace(R.id.ai_chat_container, chatFragment)
+                                .commit();
+                    }
+                    drawerLayout.openDrawer(GravityCompat.END);
+                }
+            });
+            
+            // Add drawer listener for AI chat
+            drawerLayout.addDrawerListener(new DrawerLayout.SimpleDrawerListener() {
+                @Override
+                public void onDrawerOpened(@NonNull View drawerView) {
+                    if (drawerView.getId() == R.id.ai_chat_container) {
+                        aiFab.hide();
+                    }
+                }
+                
+                @Override
+                public void onDrawerClosed(@NonNull View drawerView) {
+                    if (drawerView.getId() == R.id.ai_chat_container) {
+                        aiFab.show();
+                    }
+                }
+            });
+        }
+
         File root;
         if (mProject != null) {
             root = mProject.getRootFile();

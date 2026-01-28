@@ -69,6 +69,12 @@ configurations.implementation {
 dependencies {
     implementation 'org.lsposed.hiddenapibypass:hiddenapibypass:4.3'
     implementation projects.terminalview
+    
+    // Gemini AI Integration
+    implementation 'com.google.ai.client.generativeai:generativeai:0.1.2'
+    implementation 'com.google.guava:guava:31.1-android'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
 
     // TODO: Removed these modules, the features that are using these modules
     // should be moved into its own module.
