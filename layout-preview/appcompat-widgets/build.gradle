@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace "com.tyron.code.appcompat-widgets"
+    namespace "com.tyron.code.appcompat_widgets"
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {

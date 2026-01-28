@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace "com.tyron.code.completion-api"
+    namespace "com.tyron.code.completion_api"
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {

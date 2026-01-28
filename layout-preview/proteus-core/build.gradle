@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace "com.tyron.code.proteus-core"
+    namespace "com.tyron.code.proteus_core"
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {

@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace "com.tyron.code.dependency-resolver"
+    namespace "com.tyron.code.dependency_resolver"
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {

@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace "com.tyron.code.vector-parser"
+    namespace "com.tyron.code.vector_parser"
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {

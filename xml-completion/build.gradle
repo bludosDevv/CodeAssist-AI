@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace "com.tyron.code.xml-completion"
+    namespace "com.tyron.code.xml_completion"
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {

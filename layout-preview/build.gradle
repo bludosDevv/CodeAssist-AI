@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace "com.tyron.code.layout-preview"
+    namespace "com.tyron.code.layout_preview"
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
