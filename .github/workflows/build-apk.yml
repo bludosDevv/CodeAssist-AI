@@ -30,7 +30,7 @@ jobs:
           java-version: 17
           cache: gradle
 
-      # Android SDK (installs platform-tools + android-34)
+      # Android SDK
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
@@ -38,11 +38,11 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
 
-      # Build Debug APK
-      - name: Build debug APK
-        run: ./gradlew assembleDebug --no-daemon
+      # Build Debug APK (VERBOSE – shows javac errors)
+      - name: Build debug APK (verbose)
+        run: ./gradlew assembleDebug --no-daemon --info --stacktrace
 
-      # Upload APK artifact (v4 – NOT deprecated)
+      # Upload APK artifact
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:
