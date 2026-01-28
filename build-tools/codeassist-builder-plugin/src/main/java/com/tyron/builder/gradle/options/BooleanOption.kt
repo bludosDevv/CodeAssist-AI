@@ -206,13 +206,6 @@ enum class BooleanOption(
 
     ENABLE_NEW_RESOURCE_SHRINKER("android.enableNewResourceShrinker", true, FeatureStage.SoftlyEnforced(VERSION_8_0)),
 
-    ENABLE_UNCOMPRESSED_NATIVE_LIBS_IN_BUNDLE(
-        "android.bundle.enableUncompressedNativeLibs",
-        true,
-        FeatureStage.SoftlyEnforced(
-            DeprecationTarget.ENABLE_UNCOMPRESSED_NATIVE_LIBS_IN_BUNDLE
-        )
-    ),
     ENABLE_SOURCE_SET_PATHS_MAP(
         "android.enableSourceSetPathsMap",
         true,
